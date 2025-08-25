@@ -12,7 +12,10 @@ function App() {
     if(counter < 20){
       console.log("added");
       // counter = counter + 1
-      setCounter(counter+1)
+      setCounter(prevCounter => prevCounter+1)   // this is callback when its will get pss in bunch 
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
+    
     }
   }
 
